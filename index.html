@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GifTastic</title>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:400,800" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Site Container -->
+    <div class="container">
+        <h1><strong>GIF</strong>tastic!</h1>
+
+        <!-- Button Display -->
+        <div id="buttons-view"></div>
+
+        <!-- User Input Form -->
+        <sidebar id="form">
+            <form id="color-form">
+                <label for="color-input"><h2>Add a color:</h2></label>
+                <input type="text" id="color-input"><br>
+
+                <!-- Submit Button -->
+                <input id="add-color" type="submit" value="Submit">
+            </form>
+        </sidebar>
+
+        <div id="GIFview"></div>
+
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="logic.js"></script>
+</body>
+</html>

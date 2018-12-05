@@ -1,0 +1,97 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+body {
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry.png");
+}
+
+h1 {
+    border-bottom: 2px dotted rgba(46, 46, 46, 0.5);
+    font-size: 60px;
+    margin-top: 0;
+}
+
+h2 {
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px #4aaaa5;
+}
+
+h1, h2, h3, #add-color {
+    font-weight: 400;
+}
+
+button {
+    background-color: #4aaaa5;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#GIFview {
+    width: 70%
+}
+
+.GIFclick {
+    display: inline-block;
+    margin: 10px 10px 25px 0;
+}
+
+.static, .animate {
+    object-fit: contain;
+    max-width: 100%;
+    border: 1px dotted #4aaaa5;
+    
+}
+
+.static {
+    filter: grayscale(100%);
+}
+
+.static:hover {
+    filter: grayscale(0%);
+    transition: filter 200ms;
+}
+
+.static:hover, .animate:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 2px -2px #333333;
+}
+
+.static:active, .animate:active {
+    box-shadow: none;
+}
+
+#form {
+    float: right;
+    width: 30%;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+#color-input {
+    width: 95%;
+    margin-bottom: 10px;
+    background-position: 10px 10px;
+    padding: 5px;
+}
+
+#add-color {
+    background-color: #4aaaa5;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    font-size: 14px;
+}
+
+button:hover, #add-color:hover {
+    background-color: pink;
+    color: #4aaaa5;
+    transition: background-color 250ms;
+}
