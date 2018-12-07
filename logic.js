@@ -29,6 +29,7 @@
     $("#add-color").on("click", function(event) {
         
         event.preventDefault();
+        $("#reset").show();
 
         var color = $("#color-input").val().trim();
 
@@ -48,6 +49,7 @@
         $(".GIFclick").empty();
         $("#note").show();
         $("#add-more").show();
+
         addMore = 0;
         imgLimit = 10;
 
@@ -152,6 +154,7 @@
     function reset() {
         colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
         renderButtons();
+        $("#reset").hide();
     }
 
 // *********************************
@@ -161,6 +164,7 @@ $(".container").on("click", ".color", displayGIFs);
 $(".container").on("click", "#reset", reset);
 $("#note").hide();
 $("#add-more").hide();
+$("#reset").hide();
 
 renderButtons();
 
