@@ -47,6 +47,7 @@
         $("#GIFview").empty();
         $(".GIFclick").empty();
         $("#note").show();
+        $("#add-more").show();
         addMore = 0;
         imgLimit = 10;
 
@@ -159,6 +160,7 @@
 $(".container").on("click", ".color", displayGIFs);
 $(".container").on("click", "#reset", reset);
 $("#note").hide();
+$("#add-more").hide();
 
 renderButtons();
 
