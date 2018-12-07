@@ -103,7 +103,7 @@
             stopButton.text("Click to Stop All").addClass("stopButton");
             $("#stopBtn").html(stopButton);
             $(".container").on("click", ".stopButton", function() {
-                $("img").removeClass("animate").addClass("static").attr("src", function() {
+                $(".GIFclick > img").removeClass("animate").addClass("static").attr("src", function() {
                     return $(this).attr("data-static");
                 });
             });
